@@ -1,5 +1,5 @@
 import {connect} from 'react-redux'
-import {fetchShifts} from '../actions/shiftsActions'
+import {fetchShifts} from '../../actions/shiftsActions'
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
 import ShiftsList from './ShiftsList'
