@@ -15,10 +15,14 @@ This app loads data about upcoming shifts from the server and displays these dat
 
 The app is built in react. The main component `App` renders `ShiftsContainer` which then loads and displays the data. We're trying to follow smart container - dumb component approach, so that containers fetching the data do the minimum (or better zero) amount of presentation.
 
-*Directory structure `./src`:*
+**Directory structure `./src`:**
+
 `./actions` - files with dispatched actions for our store
+
 `./features` - separate pieces of application
+
 `./lib` - used for reusable code, e.g. api requests
+
 `./reducers` - reducers for our redux store
 
 ### State management and side effects
@@ -35,5 +39,5 @@ For api calls we're using axios library. `.src/lib/requests/webapi.js` contains 
 
 ## Your approach
 
-Do not take our set up of the application as something you have to follow, feel free to restructure, refactor or change any of the approaches that we're using. We're always happy to see a different path that we can take and you know how to reason about it.
+Do not take our setup of the application as something you have to follow, feel free to restructure, refactor or change any of the approaches that we're using. We're always happy to see a different path that we can take and you know how to reason about it.
 
