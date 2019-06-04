@@ -14,24 +14,23 @@ module.exports = merge(common, {
       chunks: 'all',
       cacheGroups: {
         react: {
-          test: /node_modules\/react/
-        }
-      }
-    }
+          test: /node_modules\/react/,
+        },
+      },
+    },
   },
   plugins: [
-    new CleanWebpackPlugin(['dist'], { root: process.cwd() }),
-    new webpack.DefinePlugin({ 'process.env.NODE_ENV': JSON.stringify('production') }),
-    new UglifyJsPlugin({ sourceMap: true }),
+    new CleanWebpackPlugin(['dist'], {root: process.cwd()}),
+    new webpack.DefinePlugin({'process.env.NODE_ENV': JSON.stringify('production')}),
+    new UglifyJsPlugin({sourceMap: true}),
     new webpack.NamedModulesPlugin(),
     new webpack.NamedChunksPlugin(chunk => {
-      if (chunk.name) {
-        return chunk.name
-      }
+      if (chunk.name) { return chunk.name }
+
       return Array.from(chunk.modulesIterable, m => path.relative(m.context, m.request)).join('_')
-    })
+    }),
   ],
   output: {
-    filename: '[name].[chunkhash:6].js'
-  }
+    filename: '[name].[chunkhash:6].js',
+  },
 })

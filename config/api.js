@@ -7,7 +7,7 @@ module.exports = () => ({
       endTime: '14:00',
       staff_required: 5,
       number_of_invited_staff: 3,
-      jobType: 'Waiting staff'
+      jobType: 'Waiting staff',
     },
     {
       roleId: 2,
@@ -16,7 +16,7 @@ module.exports = () => ({
       endTime: '17:00',
       staff_required: 2,
       number_of_invited_staff: 2,
-      jobType: 'Retail store shift'
+      jobType: 'Retail store shift',
     },
     {
       roleId: 3,
@@ -25,7 +25,7 @@ module.exports = () => ({
       endTime: '19:00',
       staff_required: 1,
       number_of_invited_staff: 2,
-      jobType: 'Waiting staff'
+      jobType: 'Waiting staff',
     },
     {
       roleId: 4,
@@ -34,7 +34,7 @@ module.exports = () => ({
       endTime: '18:00',
       staff_required: 3,
       number_of_invited_staff: 0,
-      jobType: 'Barista'
+      jobType: 'Barista',
     },
     {
       roleId: 5,
@@ -43,7 +43,7 @@ module.exports = () => ({
       endTime: '19:00',
       staff_required: 2,
       number_of_invited_staff: 1,
-      jobType: 'Receptionist'
+      jobType: 'Receptionist',
     },
     {
       roleId: 6,
@@ -52,10 +52,10 @@ module.exports = () => ({
       endTime: '16:00',
       staff_required: 2,
       number_of_invited_staff: 0,
-      jobType: 'Security'
-    }
+      jobType: 'Security',
+    },
   ],
-  ['invited_contracts_list']: [
+  invited_contracts_list: [
     {
       id: 1,
       roleId: 1,
@@ -90,6 +90,6 @@ module.exports = () => ({
       id: 7,
       roleId: 3,
       candidateName: 'Samantha Brown',
-    }
+    },
   ],
 })

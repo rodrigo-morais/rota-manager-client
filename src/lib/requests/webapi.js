@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import {getJSON, postJSON, putJSON} from './request.js'
 
 export function fetchShiftsList() {
