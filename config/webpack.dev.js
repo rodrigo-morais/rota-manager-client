@@ -14,10 +14,10 @@ module.exports = merge(common, {
     proxy: {
       '/api': {
         target: 'http://localhost:3001',
-        pathRewrite: { '^/api': '' }
-      }
-    }
+        pathRewrite: {'^/api': ''},
+      },
+    },
   },
   mode: 'development',
-  plugins: [new webpack.NamedModulesPlugin(), new webpack.HotModuleReplacementPlugin()]
+  plugins: [new webpack.NamedModulesPlugin(), new webpack.HotModuleReplacementPlugin()],
 })

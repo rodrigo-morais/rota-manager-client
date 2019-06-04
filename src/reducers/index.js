@@ -4,7 +4,7 @@ import shiftsReducer from './shiftsReducer'
 
 
 const catapultReducer = combineReducers({
-  shifts:  shiftsReducer
+  shifts: shiftsReducer,
 })
 
 export default createStore(catapultReducer)

@@ -18,21 +18,15 @@ class InvitedContractsContainer extends Component {
 
 InvitedContractsContainer.propTypes = {
   roleId: PropTypes.number.isRequired,
-  invitedContractsList: PropTypes.arrayOf(
-    PropTypes.shape({
-      candidateName: PropTypes.string.isRequired,
-    })
-  ),
+  invitedContractsList: PropTypes.arrayOf(PropTypes.shape({
+    candidateName: PropTypes.string.isRequired,
+  })),
 }
 
-const mapStateToProps = (state) => {
-  return {
-  }
-}
+const mapStateToProps = (state) => ({
+})
 
-const mapDispatchToProps = (dispatch) => {
-  return {
-  }
-}
+const mapDispatchToProps = (dispatch) => ({
+})
 
 export default connect(mapStateToProps, mapDispatchToProps)(InvitedContractsContainer)

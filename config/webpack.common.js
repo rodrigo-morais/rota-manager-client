@@ -1,37 +1,36 @@
 const path = require('path')
 const HtmlWebpackInlineSourcePlugin = require('html-webpack-inline-source-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const webpack = require('webpack')
 
 module.exports = {
-  entry:  ['babel-polyfill', './src/index.jsx'],
+  entry: ['babel-polyfill', './src/index.jsx'],
   module: {
     rules: [
       {
-        test:    /\.(js|jsx)$/,
+        test: /\.(js|jsx)$/,
         include: path.resolve(process.cwd(), 'src'),
         exclude: /node_modules/,
-        loader:  'babel-loader'
+        loader: 'babel-loader',
       },
       {
         test: /\.css$/,
-        use:  ['style-loader', 'css-loader']
-      }
-    ]
+        use: ['style-loader', 'css-loader'],
+      },
+    ],
   },
   plugins: [
     new HtmlWebpackPlugin({
       inlineSource: '^runtime.*js$',
-      template:     'src/index.html'
+      template: 'src/index.html',
     }),
-    new HtmlWebpackInlineSourcePlugin()
+    new HtmlWebpackInlineSourcePlugin(),
   ],
   resolve: {
-    extensions: ['*', '.js', '.jsx']
+    extensions: ['*', '.js', '.jsx'],
   },
   output: {
-    filename:   '[name].js',
-    path:       path.resolve(process.cwd(), 'dist'),
-    publicPath: '/'
-  }
+    filename: '[name].js',
+    path: path.resolve(process.cwd(), 'dist'),
+    publicPath: '/',
+  },
 }
