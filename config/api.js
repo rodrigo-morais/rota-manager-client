@@ -91,5 +91,10 @@ module.exports = () => ({
       roleId: 3,
       candidateName: 'Samantha Brown',
     },
+    {
+      id: 8,
+      roleId: 5,
+      candidateName: 'Kevin Edwards',
+    },
   ],
 })
