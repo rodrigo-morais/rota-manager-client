@@ -2,7 +2,7 @@ module.exports = () => ({
   shifts_list: [
     {
       roleId: 1,
-      shiftDate: 'Tuesday 11 June 2019',
+      shiftDate: 'Tuesday 10 March 2020',
       startTime: '07:00',
       endTime: '14:00',
       staff_required: 5,
@@ -11,7 +11,7 @@ module.exports = () => ({
     },
     {
       roleId: 2,
-      shiftDate: 'Thursday 13 June 2019',
+      shiftDate: 'Thursday 12 March 2020',
       startTime: '09:00',
       endTime: '17:00',
       staff_required: 2,
@@ -20,7 +20,7 @@ module.exports = () => ({
     },
     {
       roleId: 3,
-      shiftDate: 'Thursday 13 June 2019',
+      shiftDate: 'Thursday 12 March 2020',
       startTime: '13:00',
       endTime: '19:00',
       staff_required: 1,
@@ -29,7 +29,7 @@ module.exports = () => ({
     },
     {
       roleId: 4,
-      shiftDate: 'Friday 14 June 2019',
+      shiftDate: 'Friday 13 March 2020',
       startTime: '10:00',
       endTime: '18:00',
       staff_required: 3,
@@ -38,8 +38,8 @@ module.exports = () => ({
     },
     {
       roleId: 5,
-      shiftDate: 'Saturday 15 June 2019',
-      startTime: '11:00',
+      shiftDate: 'Saturday 14 March 2020',
+      startTime: '15:00',
       endTime: '19:00',
       staff_required: 2,
       number_of_invited_staff: 1,
@@ -47,7 +47,7 @@ module.exports = () => ({
     },
     {
       roleId: 6,
-      shiftDate: 'Saturday 15 June 2019',
+      shiftDate: 'Saturday 14 March 2020',
       startTime: '10:00',
       endTime: '16:00',
       staff_required: 2,

@@ -8,7 +8,6 @@ function ShiftsList(props) {
   return (
     <div>
       <h1>Shifts List</h1>
-      <input placeholder='filter' />
       {
         list.map((shift) => (
           <div key={shift.roleId}>
