@@ -2,7 +2,7 @@
 
 ## Installation and running
 
-All you need is `yarn && yarn start` to get the environment running.
+All you need is `yarn && yarn start` to get the environment running. We recommend using node version 12+.
 
 To see the application running visit http://localhost:8080
 The API is served from http://localhost:3001, please visit this page to see the structure of returned data.
