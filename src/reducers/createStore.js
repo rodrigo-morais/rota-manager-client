@@ -2,7 +2,7 @@ import {createStore, applyMiddleware} from 'redux'
 import {composeWithDevTools} from 'redux-devtools-extension'
 import promiseMiddleware from 'redux-promise-middleware'
 import reduxLogger from 'redux-logger'
-import reduxThunk from 'redux-thunk'
+import {default as reduxThunk} from 'redux-thunk';
 
 // creates the store
 export default (rootReducer) => {
@@ -11,11 +11,11 @@ export default (rootReducer) => {
   const middleware = []
   const enhancers = []
 
-  middleware.push(promiseMiddleware())
+  middleware.push(promiseMiddleware)
   middleware.push(reduxThunk)
+  middleware.push(reduxLogger)
 
   enhancers.push(applyMiddleware(...middleware))
-  middleware.unshift(reduxLogger())
   const composed = composeWithDevTools(...enhancers)
   return createStore(rootReducer, composed)
 }
