@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ShiftsFilter Rendering renders according to design 1`] = `
+<div>
+  <h1>
+    Shifts Filter
+  </h1>
+  <form>
+    <label
+      htmlFor="jobTypes"
+    >
+      Job Type: 
+    </label>
+    <select
+      id="jobTypes"
+      onChange={[MockFunction]}
+      value="All"
+    >
+      <option>
+        waiter
+      </option>
+    </select>
+    <label
+      htmlFor="startTimes"
+    >
+          Start Time: 
+    </label>
+    <select
+      id="startTimes"
+      onChange={[MockFunction]}
+      value="AM"
+    >
+      <option>
+        All
+      </option>
+      <option>
+        AM
+      </option>
+      <option>
+        PM
+      </option>
+    </select>
+  </form>
+</div>
+`;
