@@ -5,6 +5,7 @@ import shiftsReducer from '../../src/reducers/shiftsReducer'
 
 const initialState = {
   shiftsList: [],
+  shiftsJobTypesList: [],
   fetchingShifts: false,
 }
 
@@ -38,22 +39,26 @@ const data = [
   },
 ]
 
+const jobTypes = ['Waiting staff', 'Retail store shift']
+
 describe('reducer', () => {
   describe('FETCH_SHIFTS_LIST_PENDING', () => {
-    it('returns loading as true and data as empty', () => {
+    it('returns loading as true, shiftsList and shiftsJobTypesList as empty', () => {
       const result = shiftsReducer(initialState, { type: `${FETCH_SHIFTS_LIST}_PENDING` })
 
       expect(result.fetchingShifts).toBe(true)
       expect(result.shiftsList).toEqual([])
+      expect(result.shiftsJobTypesList).toEqual([])
     })
   })
 
   describe('FETCH_SHIFTS_LIST_FULFILLED', () => {
-    it('returns loading as false and data', () => {
+    it('returns loading as false, shiftsList and shiftsJobTypesList the correct data', () => {
       const result = shiftsReducer(initialState, { type: `${FETCH_SHIFTS_LIST}_FULFILLED`, payload: { data } })
 
       expect(result.fetchingShifts).toBe(false)
       expect(result.shiftsList).toEqual(data)
+      expect(result.shiftsJobTypesList).toEqual(jobTypes)
     })
   })
 })
