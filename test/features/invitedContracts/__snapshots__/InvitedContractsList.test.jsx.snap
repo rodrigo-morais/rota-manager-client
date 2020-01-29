@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<div>
+  <h1>
+    Loading...
+  </h1>
+</div>
+`;
+
+exports[` 2`] = `
+<div>
+  <button
+    onClick={[MockFunction]}
+  >
+    Invited Candidates
+  </button>
+</div>
+`;
+
+exports[`InvitedContractsList when list is visible with data Rendering renders according to design 1`] = `
+<div>
+  <h1
+    style={
+      Object {
+        "display": "inline",
+        "marginRight": "2%",
+      }
+    }
+  >
+    Contracts List
+  </h1>
+  <button
+    onClick={[MockFunction]}
+    style={
+      Object {
+        "border": "none",
+        "cursor": "pointer",
+        "display": "inline",
+        "fontSize": "25px",
+        "position": "relative",
+        "top": "-7px",
+      }
+    }
+  >
+    ×
+  </button>
+  <ul>
+    <li>
+      First
+    </li>
+    <li>
+      Second
+    </li>
+    <li>
+      Third
+    </li>
+  </ul>
+</div>
+`;

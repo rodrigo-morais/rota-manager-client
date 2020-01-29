@@ -24,6 +24,11 @@ module.exports = {
             "specialLink": [ "to", "hrefLeft", "hrefRight" ],
             "aspects": [ "noHref", "invalidHref", "preferButton" ]
         }],
+        "jsx-a11y/label-has-for": [ 2, {
+          "required": {
+            "some": [ "nesting", "id" ]
+          }
+        }],
         "react/jsx-wrap-multilines": [2, {
             "declaration": "parens-new-line",
             "assignment": "parens-new-line",
