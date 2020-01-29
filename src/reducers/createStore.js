@@ -2,7 +2,7 @@ import {createStore, applyMiddleware} from 'redux'
 import {composeWithDevTools} from 'redux-devtools-extension'
 import promiseMiddleware from 'redux-promise-middleware'
 import reduxLogger from 'redux-logger'
-import {default as reduxThunk} from 'redux-thunk';
+import thunkMiddleware from 'redux-thunk'
 
 // creates the store
 export default (rootReducer) => {
@@ -12,7 +12,7 @@ export default (rootReducer) => {
   const enhancers = []
 
   middleware.push(promiseMiddleware)
-  middleware.push(reduxThunk)
+  middleware.push(thunkMiddleware)
   middleware.push(reduxLogger)
 
   enhancers.push(applyMiddleware(...middleware))
