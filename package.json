@@ -1,7 +1,7 @@
 {
-  "name": "catapult",
+  "name": "rota-manager-client",
   "version": "1.0.0",
-  "description": "Catapult - \"he who provides staff\". From the Latin \"Catapultess, staffingness\"",
+  "description": "Client to manage jobs shift",
   "main": "",
   "repository": {
     "type": "git",
@@ -43,7 +43,7 @@
     "redux-devtools-extension": "",
     "redux-logger": "",
     "redux-promise-middleware": "",
-    "redux-thunk": "",
+    "redux-thunk": "^2.3.0",
     "seamless-immutable": "^6.1.0",
     "uglifyjs-webpack-plugin": "^1.2.4",
     "webpack": "^4.20.2",

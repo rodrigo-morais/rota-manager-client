@@ -1,4 +1,4 @@
-# Catapult tech test
+# Rota Manager Client 
 
 ## Installation and running
 
@@ -36,8 +36,4 @@ Side effects, in this case only api calls, are handled with [redux promise middl
 ### Api calls
 
 For api calls we're using axios library. `.src/lib/requests/webapi.js` contains 2 api calls that we are / will be using.
-
-## Your approach
-
-Do not take our setup of the application as something you have to follow, feel free to restructure, refactor or change any of the approaches that we're using. We're always happy to see a different path that we can take and you know how to reason about it.
 
